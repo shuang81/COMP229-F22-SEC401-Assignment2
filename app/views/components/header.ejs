@@ -1,0 +1,37 @@
+<!-- 
+COMP 229 - Fall 2022 - Web Application Development
+Name: Huang Sheng Wen
+Student ID: 301215574
+ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- Logo & Title -->
+    <a class="navbar-brand" href="/"> <i class="fa-solid fa-synagogue"></i> COMP 229 - Web Application Development - Fall 2022 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="home">
+          <a class="nav-link <%= (page == 'home') ? 'active' : ''; %>" aria-current="page" href="/home"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <li class="about">
+          <a class="nav-link <%= (page == 'about') ? 'active' : ''; %>" aria-current="page" href="/about"><i class="fa-solid fa-user"></i> About</a>
+        </li>
+
+        <li class="projects">
+          <a class="nav-link <%= (page == 'projects') ? 'active' : ''; %>" aria-current="page" href="/projects"><i class="fa-solid fa-file"></i> Projects</a>
+        </li>
+
+        <li class="services">
+          <a class="nav-link <%= (page == 'services') ? 'active' : ''; %>" aria-current="page" href="/services"><i class="fa-solid fa-bars"></i> Services</a>
+        </li>
+
+        <li class="contact">
+          <a class="nav-link <%= (page == 'contact') ? 'active' : ''; %>" aria-current="page" href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>

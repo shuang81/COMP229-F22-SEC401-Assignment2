@@ -1,0 +1,39 @@
+<!-- 
+COMP 229 - Fall 2022 - Web Application Development
+Name: Huang Sheng Wen
+Student ID: 301215574
+ -->
+<html>
+    <body>
+            <!-- Title -->
+            <div class="homepage">
+                <p><%= title %> Page</p>
+            </div>
+
+            <!-- Photo -->
+            <div class="homephoto">
+                <img src="/content/images/me.jpg" width="450px" height="350px" alt="Me.jpg">
+            </div>
+
+            <br>
+
+            <!-- Content -->
+            <div class="homeintro">
+                Hello, I'm Alan, a software engineering student at Centennial College. 
+                I aim to be a Web developer, and this is my first Node.js project. 
+                More info about me is on the top navigation bar, or you can use the link below.
+            </div>
+
+            <br>
+
+            <!-- Bullet List -->
+            <div class="pagelist">
+                <ul>
+                    <li><a class="nav-link <%= (page == 'about') ? 'active' : ''; %>" aria-current="page" href="/about"><p class="linkcolor">About Me <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a></li>
+                    <li><a class="nav-link <%= (page == 'projects') ? 'active' : ''; %>" aria-current="page" href="/projects"><p class="linkcolor">My Projects <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a></li>
+                    <li><a class="nav-link <%= (page == 'services') ? 'active' : ''; %>" aria-current="page" href="/services"><p class="linkcolor">My Services <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a></li>
+                    <li><a class="nav-link <%= (page == 'contact') ? 'active' : ''; %>" aria-current="page" href="/contact"><p class="linkcolor">Contact Me <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a></li>
+                </ul>
+            </div>
+    </body>
+</html>

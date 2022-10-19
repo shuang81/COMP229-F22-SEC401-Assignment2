@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<!--
+    COMP 213 - Web Interface Design - Fall 2021
+    Student Name: Huang Sheng Wen
+    Student Number: 301215574
+-->
+<body oncontextmenu="return false" ondragstart="return false">
+    <div class="header">
+        <a href="https://new.sothebysrealty.com/eng" target="_blank">
+            <img src="content/projectlogo.jpg" height="175px" width="300px">
+        </a>
+    </div>
+    <hr>
+    <div class="connection1">
+        <form class="searchform">
+        <h1>Property Search</h1>
+        <h3 class="subtitle">Find the one that suits you best.</h3>
+                    <span class="span1"></span>
+        <label class="labelform"><b>First Name : </b></label>
+        <input type="text" id="firstname" class="inputform" size="25%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="labelform"><b>Last Name : </b></label>
+        <input type="text" id="lastname" class="inputform" size="25%">
+                    <span class="span"></span>
+        <label class="labelform"><b>Email Address : </b></label>
+        <input type="email" id="email" class="inputform1" size="25%">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="labelform"><b>Phone Number : </b></label>            
+        <input type="tel" id="phone" class="inputform1" size="21%">
+                    <span class="span"></span>
+        <label class="labelform"><b>Property Type : </b></label>
+        <input type="radio" class="inputform1" id="type" name="type" value="house">
+        <label for="house" class="labelform">House</label>
+        <input type="radio" class="inputform1" id="type" name="type" value="condo">
+        <label for="condo" class="labelform">Condo</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="labelform"><b>Number of Bedrooms : </b></label>
+        <select class="inputform1">
+            <option class="inputform1">0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="labelform"><b>Number of Bathrooms : </b></label>
+        <select class="inputform1">
+            <option class="inputform1">0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+                    <span class="span"></span>
+        <label class="labelform"><b>Price Range From:&nbsp;$</b></label>
+        <input type="number" id="pricerange" class="inputform1" min="0" style="width: 80px">
+        <label class="labelform"><b>K ~</b></label>
+        <input type="number" id="pricerange" class="inputform1" min="0" style="width: 80px">
+        <label class="labelform"><b>K</b></label>
+                    <span class="span"></span>
+        <label class="labelform"><b>Message</b></label>
+                    <span class="span2"></span>
+        <textarea id="message" class="textarea" placeholder="I'd like to discuss buying, selling, renting with you." name="message" rows="5" cols="55"></textarea>
+                    <span class="span2"></span>
+        <button class="button1"><a class="linkcolor" href="mailto:mraghababa@gmail.com" target="_blank">Send Email</a></button>
+        </form>
+        <div class="footersale">
+            <a href="Project.html">Back</a>
+        </div>
+    </div>
+</body>
+</html>

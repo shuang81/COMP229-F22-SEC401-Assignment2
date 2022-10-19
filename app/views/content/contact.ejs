@@ -1,0 +1,31 @@
+<!-- 
+COMP 229 - Fall 2022 - Web Application Development
+Name: Huang Sheng Wen
+Student ID: 301215574
+ -->
+<html>
+<body>
+    <div class="homepage">
+        <p><%= title %> Me</p>
+    </div>
+
+    <div class="connection">
+        <form action="/home">
+            <input type="text" placeholder="First Name" id="firstname" class="inputform" size="25%">
+                        &nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Last Name" id="lastname" class="inputform" size="25%">
+                        <span class="span1"></span>
+            <input type="email" placeholder="Email Address" id="email" class="inputform" size="25%">
+                        &nbsp;&nbsp;&nbsp;
+            <input type="tel" placeholder="Phone Number" id="phone" class="inputform" size="25%">
+                        <span class="span"></span>
+            <label for="message" class="message">Message</label>
+                        <span class="span2"></span>
+            <textarea id="message" class="textarea" placeholder="Hello, you can leave a message here, and I will reply within 48 hours after receiving the email." name="message" rows="5" cols="50"></textarea>
+                        <span class="span1"></span>
+            <button class="button" onclick="redirect()">SEND MESSAGE</button>
+        </form>
+    </div>
+
+</body>
+</html>
