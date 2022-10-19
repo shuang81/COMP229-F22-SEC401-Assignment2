@@ -7,14 +7,15 @@
 
     <div class="row">
         <div class="col">
-            <table class="table table-striped table-bordered table-hover">
+            <table class="table table-striped table-bordered table-hover" id="myTable">
                 <thead class="table-dark">
                     <!-- Title -->
                     <tr>
                         <th scope="col" class="text-center">#</th>
-                        <th scope="col">Full Name</th>
+                        <!-- Sort Function -->
+                        <th onclick="sortTable(0)" scope="col">Name</th>
                         <th scope="col">Phone Number</th>
-                        <th scope="col">Email</th>
+                        <th scope="col">Email Address</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -28,16 +29,18 @@
                             <td><%= contacts[count].phone %></td>
                             <td><%= contacts[count].email %></td>
                             <!-- Hide the two buttons, if user not login  -->
+
                             <td class="text-center col-1">
                                 <a href="/contact-edit/<%= contacts[count]._id %>"
                                     class="btn btn-primary btn-sm">
-                                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                                    <i class="fas fa-pencil-alt"></i> Update</a>
                             </td>
                             <td class="text-center col-1">
                                 <a href="/contact-delete/<%= contacts[count]._id %>"
                                     class="btn btn-danger btn-sm">
                                     <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
+                            
                         </tr>
                     <% } %>
                 </tbody>

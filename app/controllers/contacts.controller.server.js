@@ -1,5 +1,5 @@
 import contactModel from '../models/contacts.js';
-// import { UserDisplayName } from '../utils/index.js';
+import { UserDisplayName } from '../utils/index.js';
 
 export function DisplayContactsList(req, res, next){
     contactModel.find(function(err, contactsCollection){
@@ -7,12 +7,12 @@ export function DisplayContactsList(req, res, next){
             console.log(err);
             res.end(err);
         }
-        res.render('index', {title: 'Contact List', page: 'contacts/list', contacts: contactsCollection })
+        res.render('index', {title: 'Contact List', page: 'contacts/list', contacts: contactsCollection, displayName: UserDisplayName(req) })
     })
 }
 
 export function DisplayContactsAddPage(req, res, next){
-    res.render('index', {title: 'Add Contact', page: 'contacts/edit', contact: {} });
+    res.render('index', {title: 'Add Contact', page: 'contacts/edit', contact: {}, displayName: UserDisplayName(req) });
 }
 
 export function ProcessContactsAddPage(req, res, next){
@@ -40,7 +40,7 @@ export function DisplayContactsEditPage(req, res, next){
             res.end(err);
         }
 
-        res.render('index', {title: 'Edit Contact', page: 'contacts/edit', contact: contact });
+        res.render('index', {title: 'Edit Contact', page: 'contacts/edit', contact: contact , displayName: UserDisplayName(req)});
     });
 }
 
