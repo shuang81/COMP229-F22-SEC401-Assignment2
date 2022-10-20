@@ -12,7 +12,7 @@ export function DisplayContactsList(req, res, next){
 }
 
 export function DisplayContactsAddPage(req, res, next){
-    res.render('index', {title: 'Add Contact', page: 'contacts/edit', contact: {}, displayName: UserDisplayName(req) });
+    res.render('index', {title: 'Add Contact', page: 'contacts/edit', contact: {}, displayName: UserDisplayName(req) })
 }
 
 export function ProcessContactsAddPage(req, res, next){
